@@ -10,8 +10,6 @@ figlet('Hello, Siphiwe', function(err, data) {
         console.dir(err);
         return;
     }
-    console.log(data)
+    const styledMessage = chalk.bgRed.blue(data);
+    console.log(styledMessage)
 });
-
-const styledMessage = chalk.bgRed.blue(greet('Siphiwe'));
-console.log(styledMessage)
