@@ -4,7 +4,7 @@ const greet = require('./greet');
 
 var figlet = require('figlet');
 
-figlet('Hello, Siphiwe', function(err, data) {
+figlet(greet("Siphiwe!"), function(err, data) {
     if (err) {
         console.log('Something went wrong...');
         console.dir(err);
